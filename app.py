@@ -60,9 +60,9 @@ manual_dist = st.sidebar.slider("SIMULATION DEPTH (CM)", 0, 100, 30) if app_mode
 
 # --- UI WORKFLOW LOGIC ---
 if not live_feed:
-    st.markdown('<h1 class="main-title">🌊 INTERGRATED SONAR AND VISION SYSTEM FOR UNDERWATER OBJECT DETECTION</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-title">🌊 INTEGRATED SONAR AND VISION SYSTEM FOR UNDERWATER OBJECT DETECTION</h1>', unsafe_allow_html=True)
     st.warning("📡 **SYSTEM STANDBY:** Awaiting Command. Toggle 'INITIALIZE MISSION' to engage sensors.")
-    # Image showing LED polarity to help with your hardware fix
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/LED%2C_5mm%2C_green_%28en%29.svg/1024px-LED%2C_5mm%2C_green_%28en%29.svg.png", caption="LED Polarity: Long leg is Anode (+), Short leg is Cathode (-)", width=300)
     
 else:
     # Everything inside here ONLY runs when the system is active
